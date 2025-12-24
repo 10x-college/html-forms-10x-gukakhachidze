@@ -22,7 +22,8 @@
       method="POST"
     >
       <fieldset>
-        <legend for="pilot-name">Pilot Name:</legend>
+        <legend>Pilot Name:</legend>
+        <label for="pilot-name">Pilot Name:</label>
         <input
           type="text"
           id="pilot-name"
@@ -51,7 +52,7 @@
       <fieldset>
         <legend>Vessel Diagnostics</legend>
 
-        <label for="">Hull Damage (%):</label>
+        <label for="hull-damage">Hull Damage (%):</label>
         <input
           type="number"
           id="hull-damage"
@@ -65,6 +66,13 @@
           id="emergency"
           required
         >
+          <option
+            value=""
+            disabled
+            selected
+          >
+            Choose priority
+          </option>
           <option value="low">Low</option>
           <option value="medium">Medium</option>
           <option value="high">High</option>
